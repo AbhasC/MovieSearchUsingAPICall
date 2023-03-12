@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css2?family=Monoton");
+@import url("https://fonts.googleapis.com/css2?family=Fugaz One");
+@import url("https://fonts.googleapis.com/css2?family=Holtwood One SC");
+@import url("https://fonts.googleapis.com/css2?family=Coda");
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #0062ff;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sb{
+    background-color: #ff9d00;
+    height: 92vh;
+    width: 900px;
+    display: flex;
+    flex-direction: column;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+.srchtxt{
+    font-size: 80px;
+    font-weight: 100;
+    font-family: "Monoton";
+    align-self: center;
+    margin: 18px 0 16px 0;
+    transition: 0.5s all;
+}
+
+.srchtxt:hover{
+    border: 2px solid black;
+    background-image: url("https://upload.wikimedia.org/wikipedia/en/thumb/4/41/Flag_of_India.svg/400px-Flag_of_India.svg.png");
+    background-position : center;
+    color: rgba(0, 0, 0, 0.1);
+}
+
+input[type="text"]{
+    width: 600px;
+    align-self: center;
+    height: 40px;
+    border-radius: 10px;
+}
+
+.inptxt{
+    font-family: "Holtwood one SC";
+    text-align: center;
+    font-size: 20px;
+}
+
+.sbmtbtn{
+    font-family: "Fugaz One";
+    align-self: center;
+    width: 250px;
+    font-size: 30px;
+    align-items: center;
+    margin: 18px 0 8px 0;
+    border-radius: 36px;
+    /* box-shadow: 3px 3px 3px black; */
+    padding: 4px 0;
+    transition: 0.3s all;
+}
+
+.sbmtbtn:hover{
+    transform: translate(-3px, -3px);
+    box-shadow: 4px 4px 4px black;
+    background-color: cornflowerblue;
+}
+
+.results{
+    display: flex;
+    /* border: 2px solid black; */
+    align-self: center;
+    width: calc(80%);
+    height: calc(60%);
+    margin: 20px 0;
+    border-radius: 7px;
+}
+
+.res{
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid black; */
+    width: calc(50%);
+    height: calc(100%);
+    align-content: center;
+    /* background-color: violet; */
+}
+
+.restext{
+    display: flex;
+    flex-direction: column;
+    /* border: 2px solid black; */
+    width: calc(50%);
+    font-size: 16px;
+    font-family: "Coda";
+    padding: calc(6%) 0;
+    /* background-color: aquamarine; */
+}
+
+.restext span{
+    padding: 4px 12px;
+}
+
+.res img{
+    width: 280px;
+    justify-content: center;
+    align-self: center;
+    padding: calc(12%) 0;
+    transition: 0.5s all;
+}
+
+/* .res img:hover{
+    opacity: 0.1;
+} */
