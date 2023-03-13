@@ -39,12 +39,13 @@ form{
     align-self: center;
     margin: 18px 0 16px 0;
     transition: 0.5s all;
+    background-position : center;
+
 }
 
 .srchtxt:hover{
     border: 2px solid black;
     background-image: url("https://upload.wikimedia.org/wikipedia/en/thumb/4/41/Flag_of_India.svg/400px-Flag_of_India.svg.png");
-    background-position : center;
     color: rgba(0, 0, 0, 0.1);
 }
 
@@ -71,13 +72,18 @@ input[type="text"]{
     border-radius: 36px;
     /* box-shadow: 3px 3px 3px black; */
     padding: 4px 0;
-    transition: 0.3s all;
+    transition: 0.5s all;
 }
 
 .sbmtbtn:hover{
     transform: translate(-3px, -3px);
     box-shadow: 4px 4px 4px black;
     background-color: cornflowerblue;
+}
+
+.sbmtbtn:active{
+    transform: translate(0px, 0px);
+    background-color: greenyellow;
 }
 
 .results{
@@ -116,13 +122,16 @@ input[type="text"]{
 }
 
 .res img{
-    width: 280px;
+    margin: auto;
+    width: 80%;
+    height: 80%;
     justify-content: center;
     align-self: center;
-    padding: calc(12%) 0;
     transition: 0.5s all;
+    object-fit: contain;
 }
 
-/* .res img:hover{
-    opacity: 0.1;
-} */
+.res img:hover{
+    width: 85%;
+    height: 85%;
+}
